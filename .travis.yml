@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- '6'
+cache:
+  yarn: true
+  directories:
+  - node_modules
+script: yarn run test
+before_deploy:
+- yarn run build
+deploy:
+  provider: npm
+  email: benjamin.otto@style-systems.de
+  api_key:
+    secure: Qcj3aG+N+SfypuEwUGbRgH2Mc5x4Yp8j94l9rERPKWpLVTXsFMPH/eJNLyTlHE7yeaLRjDWNAINlboTxFgS4iEglFFT5ER4AfOvyDKOowz3KvKYTmWkt53rCSW8GDQFhfl0U8NRCUCo9CFVsWuS3dC4eKhRXuKYeJGVce4GoqU7Z3NlvPAFrDAwC+TpoLOdoJrLVFEXR3YuxDuA67ZRTQ9RM1Q91r4mg3Z8lfpDacORiE3UBwBbj56Iss/0kK1ZofAHyTtwD/qqkzgg7Rfh4GP6th283WdvlxOzAAlUngl9kxcfcZaIGz3wMA3kOmzWd/ciU1m1hReWLNLeVxyfRGaPBf2Hp3dj7/tM7NlcY9gLwMWjc/1+fvxRtD/AleO0BWaZ4P9eqrZKQZ2H7AEp1xSRRKm5JkWMVh9U/Nfe1llHXPa50SaHT/y1jXw4UVdTJiEDSG6BEuyU0lHdKHC0KDqX/1xpaBYNTcX1yMsISHDSCFpNORbNfrLra2RD3YhjKtOvMnvVbMOs+ohYFgGLcDHQX6u6TBmUij+rex8ljNjIZJpJ4nIe9luBcV/oOwSeQiG62iu/f73ZplfJhUlSDxsqp4xh18kZ89dnuAZaDcix73CdNf5gYH1fjUR+3SLZCJqq4Lki2gBZHe1zC1p/gwkFaE/EtbPU7v8rjJ9Powpg=
+  on:
+    tags: true
+    repo: Mercateo/ws-intl

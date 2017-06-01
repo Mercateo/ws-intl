@@ -1,0 +1,11 @@
+dist-release/
+.DS_Store
+dist/
+dist-i18n/
+.idea
+*.log
+node_modules/
+*.iml
+dist-tests/
+examples/**/dist
+examples/**/dist-i18n
