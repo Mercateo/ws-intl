@@ -2,20 +2,20 @@ import React, { Component } from 'react';
 import expect from 'expect';
 import PropTypes from 'prop-types';
 import { mount } from 'enzyme';
-import { Provider, Consumer } from '../src';
+import { Translations, Translate } from '../src';
 
 const I18N = { foo: (data: { test: string }) => 'foo' + data.test };
 
 describe('ws-intl', () => {
   it('should pass messages from provider to consumer', () => {
     const c = mount(
-      <Provider messages={I18N}>
+      <Translations messages={I18N}>
         <div>
-          <Consumer>
+          <Translate>
             {(messages: typeof I18N) => <span>{messages.foo({ test: '1' })}</span>}
-          </Consumer>
+          </Translate>
         </div>
-      </Provider>
+      </Translations>
     );
 
     expect(c.contains(<span>{I18N.foo({ test: '1' })}</span>)).toBeTruthy();
@@ -39,9 +39,9 @@ describe('ws-intl', () => {
     }
 
     mount(
-      <Provider messages={I18N}>
+      <Translations messages={I18N}>
         <MyConsumer />
-      </Provider>
+      </Translations>
     );
 
     expect(messages).toBeTruthy();

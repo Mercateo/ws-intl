@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export interface ConsumerProps {
+export interface TranslateProps {
   children: <T>(messages: T) => JSX.Element;
 }
 
-export class Consumer extends Component<ConsumerProps, {}> {
+export class Translate extends Component<TranslateProps, {}> {
   static contextTypes = {
     messages: PropTypes.any.isRequired
   };

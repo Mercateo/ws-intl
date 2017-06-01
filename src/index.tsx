@@ -1,2 +1,2 @@
-export { Provider, ProviderProps } from './Provider';
-export { Consumer, ConsumerProps } from './Consumer';
+export { Translations, TranslationsProps } from './Translations';
+export { Translate, TranslateProps } from './Translate';

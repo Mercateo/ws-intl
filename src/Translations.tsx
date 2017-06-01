@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-export interface ProviderProps {
+export interface TranslationsProps {
   messages: { [key: string]: (data?: { [key: string]: number | string }) => string };
   children: JSX.Element;
 }
 
-export class Provider extends Component<ProviderProps, {}> {
+export class Translations extends Component<TranslationsProps, {}> {
   static childContextTypes = {
     messages: PropTypes.any.isRequired
   };

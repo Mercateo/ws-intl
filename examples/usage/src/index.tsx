@@ -1,16 +1,16 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Consumer, Provider } from '@mercateo/ws-intl';
+import { Translate, Translations } from '@mercateo/ws-intl';
 
 const I18N = { hello: (data: { name: string }) => `Hello ${data.name}!` };
 
 render(
-  <Provider messages={I18N}>
+  <Translations messages={I18N}>
     <div>
-      <Consumer>
+      <Translate>
         {(messages: typeof I18N) => <span>{messages.hello({ name: 'World' })}</span>}
-      </Consumer>
+      </Translate>
     </div>
-  </Provider>,
+  </Translations>,
   document.getElementById('app')
 );
