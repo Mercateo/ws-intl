@@ -7,7 +7,9 @@
   "typings": "dist-release/src/index.d.ts",
   "scripts": {
     "test": "yarn run ws l && yarn run ws u",
-    "build": "yarn run ws -- b -p"
+    "build": "yarn run ws -- b -p",
+    "preversion": "yarn run test",
+    "postversion": "git push && git push --tags"
   },
   "ws": {
     "type": "browser"
