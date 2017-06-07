@@ -5,6 +5,9 @@
   "main": "dist-release/index.js",
   "webpack": "src/index.tsx",
   "typings": "dist-release/src/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "yarn run ws l && yarn run ws u",
     "build": "yarn run ws -- b -p",
