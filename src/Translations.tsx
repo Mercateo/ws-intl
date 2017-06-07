@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+// TODO enhance typings after switching to @types/react 15.x
 export interface TranslationsProps {
   messages: any;
-  children: JSX.Element;
+  // children: JSX.Element;
 }
 
 export class Translations extends Component<TranslationsProps, {}> {
@@ -18,6 +19,6 @@ export class Translations extends Component<TranslationsProps, {}> {
   }
 
   render() {
-    return this.props.children;
+    return this.props.children as any;
   }
 }

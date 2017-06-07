@@ -29,8 +29,8 @@
   },
   "dependencies": {
     "@types/prop-types": "^15.5.1",
-    "@types/react": "^15.0.25",
-    "@types/react-dom": "^15.5.0",
+    "@types/react": "0.14.x || >= 15.0.0",
+    "@types/react-dom": "0.14.x || >= 15.0.0",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
