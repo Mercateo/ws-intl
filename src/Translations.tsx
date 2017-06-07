@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 export interface TranslationsProps {
-  messages: { [key: string]: (data?: { [key: string]: number | string }) => string };
+  messages: any;
   children: JSX.Element;
 }
 
