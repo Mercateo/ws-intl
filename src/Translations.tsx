@@ -6,7 +6,7 @@ export interface TranslationsProps {
   children: JSX.Element;
 }
 
-export class Translations extends Component<TranslationsProps, {}> {
+export class Translations extends Component<TranslationsProps, {}> {
   static childContextTypes = {
     messages: PropTypes.any.isRequired
   };
@@ -21,5 +21,3 @@ export class Translations extends Component<TranslationsProps, {}> {
     return this.props.children;
   }
 }
-
-
