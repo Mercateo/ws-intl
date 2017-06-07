@@ -1,6 +1,6 @@
 {
   "name": "@mercateo/ws-intl",
-  "version": "1.0.1-0",
+  "version": "1.0.1-1",
   "description": "Components for passing i18n messages between components/modules",
   "main": "dist-release/index.js",
   "webpack": "src/index.tsx",
