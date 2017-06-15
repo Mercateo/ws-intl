@@ -1,0 +1,73 @@
+{
+  //-------- Editor --------
+
+  // we default to 2 spaces for indentation
+  "editor.tabSize": 2,
+
+  // automatically form code on save and paste
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+
+  //-------- Search --------
+
+  // do not search in these directories
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/dist": true,
+    "**/dist-i18n": true,
+    "**/dist-tests": true,
+    "**/dist-release": true
+  },
+
+  //-------- Files --------
+
+  // these files will not be shown in the file explorer
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/.idea": true
+  },
+
+  // removes trailing whitespace on save
+  "files.trimTrailingWhitespace": true,
+
+  // inserts final new line on save
+  "files.insertFinalNewline": true,
+
+  // these files will not be watched for changes
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/bower_components": true,
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/dist-i18n/**": true,
+    "**/dist-tests/**": true,
+    "**/dist-release/**": true
+  },
+
+  //-------- JSON ----------------
+
+  // removes new lines
+  // see https://github.com/Microsoft/vscode/issues/23260
+  "json.format.enable": false,
+
+  //-------- HTML ----------------
+
+  // doesn't work good with templates
+  // see https://github.com/beautify-web/js-beautify/issues/1130
+  "html.format.enable": false,
+
+  //-------- TypeScript ----------------
+
+  // always use the local typescript sdk
+  "typescript.tsdk": "./node_modules/typescript/lib",
+
+  //-------- Extensions: TSLint --------
+
+  // always use the tslint.json from @mercateo/ws
+  "tslint.configFile": "./node_modules/@mercateo/ws/tslint.json",
+
+  // try to fix linter errors on save
+  "tslint.autoFixOnSave": true
+}

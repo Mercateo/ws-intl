@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    // TSLint support
+    // see https://marketplace.visualstudio.com/items?itemName=eg2.tslint
+    "eg2.tslint"
+  ]
+}
