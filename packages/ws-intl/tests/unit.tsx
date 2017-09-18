@@ -12,8 +12,9 @@ describe('ws-intl', () => {
       <Translations messages={I18N}>
         <div>
           <Translate>
-            {(messages: typeof I18N) =>
-              <span>{messages.foo({ test: '1' })}</span>}
+            {(messages: typeof I18N) => (
+              <span>{messages.foo({ test: '1' })}</span>
+            )}
           </Translate>
         </div>
       </Translations>
