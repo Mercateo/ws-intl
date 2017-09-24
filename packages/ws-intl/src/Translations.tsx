@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 
 // TODO enhance typings after switching to @types/react 15.x
@@ -7,7 +7,7 @@ export interface TranslationsProps {
   // children: JSX.Element;
 }
 
-export class Translations extends Component<TranslationsProps, {}> {
+export class Translations extends Component<TranslationsProps> {
   static childContextTypes = {
     messages: PropTypes.any.isRequired
   };
