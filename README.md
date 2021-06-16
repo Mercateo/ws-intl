@@ -1,3 +1,5 @@
+**DEPRECATED** This project is unmantained, deprecated and goes into archive with followup removal in 2 years.
+
 # `@mercateo/ws-intl`
 
 [![Build Status](https://travis-ci.org/Mercateo/ws-intl.svg?branch=master)](https://travis-ci.org/Mercateo/ws-intl)
